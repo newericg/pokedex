@@ -1,0 +1,14 @@
+$primary-color: rgb(216, 5, 5);
+$secondary-color: #2E6EB5;
+$tertiary-color: #FECC3C;
+
+
+@mixin centerPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.align_center {
+  @include centerPage()
+}
