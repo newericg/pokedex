@@ -39,12 +39,14 @@
   height: 150px;
   padding: 40px 20px;
   margin: 20px auto;
+  box-shadow: 5px 5px 5px 0px rgba(112, 112, 112, 0.75);
   &:hover .pokemon_details {
     display: flex;
   }
 }
 
 .pokemon_details {
+  text-decoration: none;
   cursor: pointer;
   display: none;
   margin: 10px 0;
@@ -53,4 +55,10 @@
   color: white;
   font-weight: bold;
   border: 1px solid transparent;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 0px rgba(112, 112, 112, 0.75);
+}
+
+input:focus {
+  outline: none;
 }

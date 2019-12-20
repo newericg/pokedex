@@ -13,7 +13,7 @@ export default function PokeList(props) {
           }
           else {
             return <div 
-            className="pokemon_tables" key={i}> 
+            className="pokemon_tables" key={i + 1}> 
               <ul>
                 <li className="pokemon_name">{pokemon.Name}</li>
                 <li className="align_center">{pokemon.Generation}</li>
@@ -21,7 +21,7 @@ export default function PokeList(props) {
                 <li className="align_center"> Number of Attacks: {pokemon[ 'Fast Attack(s)' ].length + pokemon[ 'Special Attack(s)' ].length} </li>
                 <div className="align_center">
                   <Link to={{
-                    pathname:`/${i}`,
+                    pathname:`/${pokemon.Name}`,
                     props: i
                   }}>
                     <button className="pokemon_details" >DETAILS</button>

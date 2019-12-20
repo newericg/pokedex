@@ -12,3 +12,8 @@ $tertiary-color: #FECC3C;
 .align_center {
   @include centerPage()
 }
+
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
