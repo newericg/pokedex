@@ -3,6 +3,7 @@ import './App.scss';
 import axios from 'axios'
 import Searchbox from './components/Searchbox';
 import PokeList from './components/PokeList';
+import Logo from './assets/pokelogo.png'
 
 
 function App() {
@@ -41,7 +42,7 @@ useEffect(() => {
   return (
     <>
       <div className="title_page">
-        POKEDEX
+       <img style={{width:'400px'}} src={Logo} alt=""/>
       </div>
       <Searchbox handleInput={handleInput}/>
       <PokeList filteredPokes={filteredPokes}/>

@@ -16,13 +16,18 @@
 .search_input_div {
   @include centerPage();
   margin: 30px 0;
+  border: 3px solid $primary-color;
+  border-radius: 10px;
+  padding-left: 10px;
+  width: 25%;
+  box-shadow: 5px 5px 5px 0px rgba(112, 112, 112, 0.75);
 }
 
 .search_input {
+  border: 3px solid transparent;
   border-radius: 10px;
-  border: 3px solid $primary-color;
   padding-left: 5px;
-  width: 25%;
+  width: 100%;
   height: 30px;
   font-size: 20px;
 }
@@ -40,6 +45,7 @@
   padding: 40px 20px;
   margin: 20px auto;
   box-shadow: 5px 5px 5px 0px rgba(112, 112, 112, 0.75);
+  border-radius: 10px;
   &:hover .pokemon_details {
     display: flex;
   }

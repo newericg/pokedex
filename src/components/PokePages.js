@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios'
 
+
 const titleColor = {
   backgroundColor: 'grey',
   color:'white'
@@ -36,12 +37,12 @@ export default function Pages({ match }) {
 
   let actualPage = actualPageArray[0]
   
-
+  
   if(!loading) {
     var expr = actualPage.Types[0];
     switch (expr) {
       case 'Fire':
-        titleColor.backgroundColor = '#fcbe7c'
+        titleColor.backgroundColor = '#bf6262'
         break;
       case 'Water':
         titleColor.backgroundColor = '#34cfeb'
@@ -66,6 +67,24 @@ export default function Pages({ match }) {
         break;
       case 'Fight':
         titleColor.backgroundColor = '#8c7257'
+        break;
+      case 'Psychic':
+        titleColor.backgroundColor = '#bb24f2'
+        break;
+      case 'Steel':
+        titleColor.backgroundColor = '#808080'
+        break;
+      case 'Ice':
+        titleColor.backgroundColor = '#c0fcfa'
+        break;
+      case 'Ghost':
+        titleColor.backgroundColor = '#726180'
+        break;
+      case 'Dragon':
+        titleColor.backgroundColor = '#f2a222'
+        break;
+      case 'Dark':
+        titleColor.backgroundColor = '#3b3a3a'
         break;
       default:
         console.log('no color')
@@ -156,6 +175,22 @@ export default function Pages({ match }) {
                 </div>
               })}</h2>
           </div>
+          
+          
+          {/* <div className="section_table">
+            <div className="section_title" style={titleColor}>
+              <h2>Next Evolution(s)</h2>
+            </div>
+              <h2 className="section_info">{
+                  actualPage['Next evolution(s)'].map((t) => {
+                  return <div> 
+                    {Object.entries(t).map((obj) => {
+                    return <p> {obj[0]} : {obj[1]} </p>
+                    })} <br/>
+                  </div>
+                })}
+              </h2>
+          </div> */}
 
         </div>
         
