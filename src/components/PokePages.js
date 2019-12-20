@@ -56,8 +56,17 @@ export default function Pages({ match }) {
         titleColor.backgroundColor = '#dfc9f5'
         break;
       case 'Bug':
-          titleColor.backgroundColor = '#bab754'
-          break;
+        titleColor.backgroundColor = '#bab754'
+        break;
+      case 'Flying':
+        titleColor.backgroundColor = '#d1d1d1'
+        break;
+      case 'Rock':
+        titleColor.backgroundColor = '#b08a00'
+        break;
+      case 'Fight':
+        titleColor.backgroundColor = '#8c7257'
+        break;
       default:
         console.log('no color')
     }
